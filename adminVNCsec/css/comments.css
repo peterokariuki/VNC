@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Arthead";
+  src: url("../../assets/fonts/Arthead-Regular\ FREE.otf");
+}
+
+@font-face {
+  font-family: "Berlin";
+  src: url("../../assets/fonts/Berlin Sans FB Regular.ttf");
+}
+
+@font-face {
+  font-family: "Berlin";
+  src: url("../../assets/fonts/Berlin Sans FB Regular.ttf");
+}
+
+@font-face {
+  font-family: "Moderat";
+  src: url("../../assets/fonts/Moderat-Thin.woff");
+}
+
+@font-face {
+  font-family: "Ocra";
+  src: url("../../assets/fonts/OCR-A Regular.ttf");
+}
+:root {
+  --primary-bg-color: #F9F3EC;
+  --secondary-bg-color-brown: #261910;
+  --tertiary-bg-color-white: #ffffff;
+  --button-bg-color-white: #ffffff;
+  --button-bg-color-lightbrown: #814141;
+  --button-bg-color-lightblue: #C5F5FF;
+  --button-bg-color-grey: #EFECEC;
+  --text-color-darkblue: #001834;
+  --text-color-black: #000000;
+  --text-color-grey: #2A2A2A;
+  --text-color-lightblue: #216DC4;
+  --text-color-white: #ffffff;
+  --text-color-brown: #5B2727;
+  --border-grey-color: #707070;
+  --border-black-color: #000000;
+  --border-brown-color: #261910;
+  --border-lightbrown-color: #814141;
+  --button-bg-color-darkorange: #9F6C48;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  background: var(--primary-bg-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+#navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: var(--secondary-bg-color-brown);
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.admin-title {
+  font-family: "Moderat";
+  color: var(--text-color-white);
+  font-size: 40px;
+  text-align: center;
+}
+
+.nav-links {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Ocra";
+  color: var(--text-color-white);
+}
+
+.activebtn {
+  display: flex;
+  gap: 20px;
+  padding: 15px 10px;
+  border: 1px solid var(--border-lightbrown-color);
+  background: var(--border-lightbrown-color);
+  border-radius: 20px;
+}
+
+.inactivebtn {
+  display: flex;
+  gap: 20px;
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-bg-color-brown);
+}
+.inactivebtn:hover {
+  border: 1px solid var(--border-lightbrown-color);
+}
+
+.admin-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.admin-image {
+  display: flex;
+  font-family: 'Berlin';
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  background: var(--text-color-brown);
+  transition: 0.2s ease;
+  color: var(--text-color-white);
+}
+
+.admin-image:hover {
+  background: var(--text-color-black);
+}
+
+.admin-name {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-name h4 {
+  font-family: "Ocra";
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--text-color-white);
+}
+
+.admin-name h5 {
+  font-family: "Ocra";
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: var(--text-color-white);
+}
+
+#content {
+  width: 76%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-title {
+  font-family: "Ocra";
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.content-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--tertiary-bg-color-white);
+  padding: 10px;
+}
+
+.comment-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 10px 20px 10px;
+  border-bottom: 1px solid var(--border-grey-color);
+}
+
+.name-blog-date {
+  display: flex;
+  font-family: 'Berlin';
+  justify-content: space-between;
+  color: var(--text-color-darkblue);
+  font-weight: 100;
+}
+
+.comment p {
+  font-family: "Moderat";
+  padding: 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=comments.css.map */

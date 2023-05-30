@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "php.version": "8.1.10"
+}

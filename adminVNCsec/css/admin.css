@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Berlin";
+  src: url("../../assets/fonts/Berlin Sans FB Regular.ttf");
+}
+@font-face {
+  font-family: "Ocra";
+  src: url("../../assets/fonts/OCR-A Regular.ttf");
+}
+:root {
+  --primary-bg-color: #F9F3EC;
+  --secondary-bg-color-brown: #261910;
+  --tertiary-bg-color-white: #ffffff;
+  --button-bg-color-white: #ffffff;
+  --button-bg-color-lightbrown: #814141;
+  --button-bg-color-lightblue: #C5F5FF;
+  --button-bg-color-grey: #EFECEC;
+  --text-color-darkblue: #001834;
+  --text-color-black: #000000;
+  --text-color-grey: #2A2A2A;
+  --text-color-lightblue: #216DC4;
+  --text-color-white: #ffffff;
+  --text-color-brown: #5B2727;
+  --border-grey-color: #707070;
+  --border-black-color: #000000;
+  --border-brown-color: #261910;
+  --border-lightbrown-color: #814141;
+  --button-bg-color-darkorange: #9F6C48;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-bg-color);
+}
+
+.login-form {
+  width: 30%;
+  background: var(--tertiary-bg-color-white);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 15px 40px 15px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--border-grey-color);
+}
+
+.errorsignin{
+  position: absolute;
+  padding: 12px 20px;
+  color: red;
+  top: 80px;
+  font-family: 'Berlin';
+  border-top: 2px solid red;
+  background: rgb(245, 154, 154);
+}
+
+.login-title {
+  font-family: "Berlin";
+  font-size: 30px;
+}
+
+.input-fields {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-fields input {
+  margin: auto;
+  padding: 15px 20px;
+  width: 85%;
+  font-family: "Ocra";
+  letter-spacing: 2px;
+}
+
+#login-btn {
+  letter-spacing: 1px;
+  margin-top: 40px;
+  width: max-content;
+  align-self: center;
+  padding: 15px 40px;
+  font-family: "Ocra";
+  background: var(--button-bg-color-lightbrown);
+  color: var(--text-color-white);
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  transition: 0.2s ease;
+}
+#login-btn:hover {
+  background: var(--secondary-bg-color-brown);
+}/*# sourceMappingURL=admin.css.map */

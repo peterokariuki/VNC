@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "Arthead";
+  src: url("../../assets/fonts/Arthead-Regular\ FREE.otf");
+}
+@font-face {
+  font-family: "Berlin";
+  src: url("../../assets/fonts/Berlin Sans FB Regular.ttf");
+}
+@font-face {
+  font-family: "Berlin";
+  src: url("../../assets/fonts/Berlin Sans FB Regular.ttf");
+}
+@font-face {
+  font-family: "Moderat";
+  src: url("../../assets/fonts/Moderat-Thin.woff");
+}
+@font-face {
+  font-family: "Ocra";
+  src: url("../../assets/fonts/OCR-A Regular.ttf");
+}
+:root {
+  --primary-bg-color: #F9F3EC;
+  --secondary-bg-color-brown: #261910;
+  --tertiary-bg-color-white: #ffffff;
+  --button-bg-color-white: #ffffff;
+  --button-bg-color-lightbrown: #814141;
+  --button-bg-color-lightblue: #C5F5FF;
+  --button-bg-color-grey: #EFECEC;
+  --text-color-darkblue: #001834;
+  --text-color-black: #000000;
+  --text-color-grey: #2A2A2A;
+  --text-color-lightblue: #216DC4;
+  --text-color-white: #ffffff;
+  --text-color-brown: #5B2727;
+  --border-grey-color: #707070;
+  --border-black-color: #000000;
+  --border-brown-color: #261910;
+  --border-lightbrown-color: #814141;
+  --button-bg-color-darkorange: #9F6C48;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btnadd {
+  background: var(--button-bg-color-lightbrown);
+  border: none;
+  padding: 10px 20px;
+  font-family: "Berlin";
+  font-size: 14px;
+  color: var(--text-color-white);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.2s ease;
+}
+.btnadd:hover {
+  background: var(--secondary-bg-color-brown);
+}
+
+main {
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  background: var(--primary-bg-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+#navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: var(--secondary-bg-color-brown);
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.admin-title {
+  font-family: "Moderat";
+  color: var(--text-color-white);
+  font-size: 40px;
+  text-align: center;
+}
+
+.nav-links {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Ocra";
+  color: var(--text-color-white);
+}
+
+.activebtn {
+  display: flex;
+  gap: 20px;
+  padding: 15px 10px;
+  border: 1px solid var(--border-lightbrown-color);
+  background: var(--border-lightbrown-color);
+  border-radius: 20px;
+}
+
+label{
+  font-family: 'Berlin';
+}
+
+.inactivebtn {
+  display: flex;
+  gap: 20px;
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-bg-color-brown);
+}
+.inactivebtn:hover {
+  border: 1px solid var(--border-lightbrown-color);
+}
+
+.admin-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.admin-image {
+  display: flex;
+  font-family: 'Berlin';
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  background: var(--text-color-brown);
+  transition: 0.2s ease;
+  color: var(--text-color-white);
+}
+
+.admin-image:hover {
+  background: var(--text-color-black);
+}
+
+.admin-name {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-name h4 {
+  font-family: "Ocra";
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--text-color-white);
+}
+
+.admin-name h5 {
+  font-family: "Ocra";
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: var(--text-color-white);
+}
+
+#content {
+  width: 76%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.errorinputblog{
+  color: red;
+  font-family: 'Berlin';
+  padding: 12px 20px;
+  position: absolute;
+  border-top: 2px solid red;
+  background: rgb(241, 150, 150);
+  right: 40%;
+}
+
+.successinputblog {
+  color: green;
+  font-family: 'Berlin';
+  padding: 12px 20px;
+  position: absolute;
+  border-top: 2px solid green;
+  background: rgb(165, 241, 165);
+  right: 40%;
+}
+
+.errorauthors{
+  color: red;
+  font-family: 'Berlin';
+  padding: 12px 20px;
+  position: absolute;
+  border-top: 2px solid red;
+  background: rgb(241, 150, 150);
+  right: 40%;
+}
+
+.successauthors {
+  color: green;
+  font-family: 'Berlin';
+  padding: 12px 20px;
+  position: absolute;
+  border-top: 2px solid green;
+  background: rgb(165, 241, 165);
+  right: 40%;
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-title div {
+  font-family: "Ocra";
+  letter-spacing: 2px;
+  font-size: 23px;
+}
+
+.content-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-smtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 10px 15px;
+  font-family: "Ocra";
+  border: 1px solid var(--border-grey-color);
+  background: var(--tertiary-bg-color-white);
+}
+
+.smparagraph textarea {
+  padding: 10px;
+  font-family: "Ocra";
+  resize: none;
+  height: 120px;
+}
+
+.blogname, .blogsmtitle, .bgtitle, .smparagraph, .readtime, .paragraph-title, .paragraph-content, .name-author, .blogimage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blogsmtitle {
+  width: 75%;
+}
+
+.author-readtime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  height: 45px;
+  font-family: "Ocra";
+  padding: 0 15px;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentsection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contentsection-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentsection-title div {
+  font-size: 23px;
+  font-family: 'Berlin';
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paragraph textarea {
+  padding: 10px;
+  font-family: "Ocra";
+  resize: none;
+  height: 300px;
+}
+
+.add-authors {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.add-authors-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-authors-title div {
+  font-family: "Ocra";
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.add-authors-content {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=add.css.map */
